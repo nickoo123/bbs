@@ -2,8 +2,8 @@ FROM golang:1.17-alpine AS builder
 
 MAINTAINER william
 
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
-RUN apk --no-cache add build-base tzdata git
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
+    apk --no-cache add build-base tzdata git
 
 COPY . /app
 WORKDIR /app
