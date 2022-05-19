@@ -28,3 +28,4 @@ logs/*.log
 generator.go
 go.work
 go.work.sum
+/server/vendor
