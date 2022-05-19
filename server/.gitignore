@@ -16,7 +16,7 @@ bbs
 
 bbs.yaml
 bbs.prod.yaml
-
+vendor/*
 .idea/*
 build/*
 
