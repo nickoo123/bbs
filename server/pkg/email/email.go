@@ -1,8 +1,8 @@
 package email
 
 import (
-	"bbs-go/model"
-	"bbs-go/pkg/bbsurls"
+	"bbs/model"
+	"bbs/pkg/bbsurls"
 	"bytes"
 	"crypto/tls"
 	"html/template"
@@ -12,7 +12,7 @@ import (
 	"github.com/jordan-wright/email"
 	"github.com/sirupsen/logrus"
 
-	"bbs-go/pkg/config"
+	"bbs/pkg/config"
 )
 
 var emailTemplate = `

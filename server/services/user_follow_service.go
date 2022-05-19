@@ -1,11 +1,11 @@
 package services
 
 import (
-	"bbs-go/cache"
-	"bbs-go/model"
-	"bbs-go/model/constants"
-	"bbs-go/pkg/event"
-	"bbs-go/repositories"
+	"bbs/cache"
+	"bbs/model"
+	"bbs/model/constants"
+	"bbs/pkg/event"
+	"bbs/repositories"
 
 	"github.com/emirpasic/gods/sets/hashset"
 	"github.com/mlogclub/simple/common/dates"

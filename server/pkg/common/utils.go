@@ -1,11 +1,11 @@
 package common
 
 import (
-	"bbs-go/model/constants"
-	"bbs-go/pkg/config"
-	"bbs-go/pkg/html"
-	"bbs-go/pkg/markdown"
-	"bbs-go/pkg/text"
+	"bbs/model/constants"
+	"bbs/pkg/config"
+	"bbs/pkg/html"
+	"bbs/pkg/markdown"
+	"bbs/pkg/text"
 	"net"
 	"net/http"
 	"strings"

@@ -1,8 +1,8 @@
 package services
 
 import (
-	"bbs-go/model/constants"
-	"bbs-go/pkg/event"
+	"bbs/model/constants"
+	"bbs/pkg/event"
 	"errors"
 	"strings"
 
@@ -14,8 +14,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 
-	"bbs-go/model"
-	"bbs-go/repositories"
+	"bbs/model"
+	"bbs/repositories"
 )
 
 var CommentService = newCommentService()

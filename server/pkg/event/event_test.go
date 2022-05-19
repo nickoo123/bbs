@@ -1,7 +1,7 @@
 package event
 
 import (
-	"bbs-go/model"
+	"bbs/model"
 	"fmt"
 	"reflect"
 	"testing"

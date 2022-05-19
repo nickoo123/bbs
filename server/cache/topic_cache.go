@@ -1,15 +1,15 @@
 package cache
 
 import (
-	"bbs-go/model/constants"
+	"bbs/model/constants"
 	"errors"
 	"time"
 
 	"github.com/goburrow/cache"
 	"github.com/mlogclub/simple/sqls"
 
-	"bbs-go/model"
-	"bbs-go/repositories"
+	"bbs/model"
+	"bbs/repositories"
 )
 
 var (

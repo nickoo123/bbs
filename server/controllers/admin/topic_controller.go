@@ -7,9 +7,9 @@ import (
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"bbs-go/controllers/render"
-	"bbs-go/pkg/common"
-	"bbs-go/services"
+	"bbs/controllers/render"
+	"bbs/pkg/common"
+	"bbs/services"
 )
 
 type TopicController struct {

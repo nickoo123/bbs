@@ -1,7 +1,7 @@
 package api
 
 import (
-	"bbs-go/services"
+	"bbs/services"
 
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/common/strs"

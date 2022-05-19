@@ -1,7 +1,7 @@
 package services
 
 import (
-	"bbs-go/model/constants"
+	"bbs/model/constants"
 	"errors"
 	"strconv"
 	"strings"
@@ -17,9 +17,9 @@ import (
 	"github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 
-	"bbs-go/cache"
-	"bbs-go/model"
-	"bbs-go/repositories"
+	"bbs/cache"
+	"bbs/model"
+	"bbs/repositories"
 )
 
 var SysConfigService = newSysConfigService()

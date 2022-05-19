@@ -5,8 +5,8 @@ import (
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"bbs-go/pkg/common"
-	"bbs-go/services"
+	"bbs/pkg/common"
+	"bbs/services"
 )
 
 type FavoriteController struct {

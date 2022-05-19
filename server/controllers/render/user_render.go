@@ -1,9 +1,9 @@
 package render
 
 import (
-	"bbs-go/cache"
-	"bbs-go/model"
-	"bbs-go/model/constants"
+	"bbs/cache"
+	"bbs/model"
+	"bbs/model/constants"
 	"strconv"
 	"strings"
 

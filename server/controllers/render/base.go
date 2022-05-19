@@ -1,7 +1,7 @@
 package render
 
 import (
-	"bbs-go/model"
+	"bbs/model"
 
 	"github.com/mlogclub/simple/common/jsons"
 	"github.com/mlogclub/simple/common/strs"

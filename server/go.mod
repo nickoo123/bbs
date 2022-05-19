@@ -1,4 +1,4 @@
-module bbs-go
+module bbs
 
 go 1.17
 

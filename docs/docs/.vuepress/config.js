@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'BBS-GO',
-    description: '基于Go语言的开源BBS系统',
+    title: 'BBS',
+    description: 'BBS',
     themeConfig: {
         nav: [
             {text: 'Home', link: '/'},

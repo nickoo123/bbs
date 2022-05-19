@@ -1,9 +1,9 @@
 package render
 
 import (
-	"bbs-go/model"
-	"bbs-go/pkg/es"
-	"bbs-go/services"
+	"bbs/model"
+	"bbs/pkg/es"
+	"bbs/services"
 )
 
 func BuildSearchTopics(docs []es.TopicDocument) []model.SearchTopicResponse {

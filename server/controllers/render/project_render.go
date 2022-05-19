@@ -1,12 +1,12 @@
 package render
 
 import (
-	"bbs-go/model"
-	"bbs-go/model/constants"
-	"bbs-go/pkg/common"
-	"bbs-go/pkg/html"
-	"bbs-go/pkg/markdown"
-	"bbs-go/pkg/text"
+	"bbs/model"
+	"bbs/model/constants"
+	"bbs/pkg/common"
+	"bbs/pkg/html"
+	"bbs/pkg/markdown"
+	"bbs/pkg/text"
 )
 
 func BuildProject(project *model.Project) *model.ProjectResponse {

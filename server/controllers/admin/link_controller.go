@@ -12,8 +12,8 @@ import (
 	"github.com/mlogclub/simple/web/params"
 	"github.com/sirupsen/logrus"
 
-	"bbs-go/model"
-	"bbs-go/services"
+	"bbs/model"
+	"bbs/services"
 )
 
 type LinkController struct {

@@ -1,11 +1,11 @@
 package eventhandler
 
 import (
-	"bbs-go/model/constants"
-	"bbs-go/pkg/event"
-	"bbs-go/pkg/msg"
-	"bbs-go/repositories"
-	"bbs-go/services"
+	"bbs/model/constants"
+	"bbs/pkg/event"
+	"bbs/pkg/msg"
+	"bbs/repositories"
+	"bbs/services"
 	"reflect"
 
 	"github.com/mlogclub/simple/sqls"

@@ -17,11 +17,11 @@ import (
 	"github.com/mlogclub/simple/web"
 	"github.com/sirupsen/logrus"
 
-	"bbs-go/controllers/api"
-	"bbs-go/pkg/config"
+	"bbs/controllers/api"
+	"bbs/pkg/config"
 
-	"bbs-go/controllers/admin"
-	"bbs-go/middleware"
+	"bbs/controllers/admin"
+	"bbs/middleware"
 )
 
 func Router() {
@@ -50,7 +50,7 @@ func Router() {
 	})
 
 	app.Any("/", func(i iris.Context) {
-		_, _ = i.HTML("<h1>Powered by bbs-go</h1>")
+		_, _ = i.HTML("<h1>粤ICP备2021098749号-1 Powered by • ©2021-2022</h1>")
 	})
 
 	// api

@@ -1,16 +1,16 @@
 package api
 
 import (
-	"bbs-go/model/constants"
+	"bbs/model/constants"
 
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/sqls"
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"bbs-go/cache"
-	"bbs-go/controllers/render"
-	"bbs-go/services"
+	"bbs/cache"
+	"bbs/controllers/render"
+	"bbs/services"
 )
 
 type TagController struct {

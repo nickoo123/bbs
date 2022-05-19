@@ -1,12 +1,12 @@
 package services
 
 import (
-	"bbs-go/model/constants"
-	"bbs-go/pkg/bbsurls"
-	"bbs-go/pkg/common"
-	"bbs-go/pkg/email"
-	"bbs-go/pkg/uploader"
-	"bbs-go/pkg/validate"
+	"bbs/model/constants"
+	"bbs/pkg/bbsurls"
+	"bbs/pkg/common"
+	"bbs/pkg/email"
+	"bbs/pkg/uploader"
+	"bbs/pkg/validate"
 	"database/sql"
 	"errors"
 	"net/http"
@@ -24,10 +24,10 @@ import (
 	"github.com/tidwall/gjson"
 	"gorm.io/gorm"
 
-	"bbs-go/cache"
+	"bbs/cache"
 
-	"bbs-go/model"
-	"bbs-go/repositories"
+	"bbs/model"
+	"bbs/repositories"
 )
 
 // 邮箱验证邮件有效期（小时）

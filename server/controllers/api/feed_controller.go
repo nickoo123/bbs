@@ -1,9 +1,9 @@
 package api
 
 import (
-	"bbs-go/controllers/render"
-	"bbs-go/pkg/common"
-	"bbs-go/services"
+	"bbs/controllers/render"
+	"bbs/pkg/common"
+	"bbs/services"
 	"strconv"
 
 	"github.com/kataras/iris/v12"

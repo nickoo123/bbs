@@ -1,12 +1,12 @@
 package admin
 
 import (
-	"bbs-go/model/constants"
-	"bbs-go/pkg/common"
+	"bbs/model/constants"
+	"bbs/pkg/common"
 	"strconv"
 	"strings"
 
-	"bbs-go/model"
+	"bbs/model"
 
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/common/passwd"
@@ -14,7 +14,7 @@ import (
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"bbs-go/services"
+	"bbs/services"
 )
 
 type UserController struct {

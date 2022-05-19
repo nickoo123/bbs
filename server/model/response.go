@@ -1,7 +1,7 @@
 package model
 
 import (
-	"bbs-go/model/constants"
+	"bbs/model/constants"
 
 	"github.com/mlogclub/simple/web"
 )

@@ -1,10 +1,10 @@
 package api
 
 import (
-	"bbs-go/controllers/render"
-	"bbs-go/model"
-	"bbs-go/pkg/common"
-	"bbs-go/services"
+	"bbs/controllers/render"
+	"bbs/model"
+	"bbs/pkg/common"
+	"bbs/services"
 	"strconv"
 
 	"github.com/emirpasic/gods/sets/hashset"

@@ -1,9 +1,9 @@
 package spam
 
 import (
-	"bbs-go/model"
-	"bbs-go/pkg/common"
-	"bbs-go/services"
+	"bbs/model"
+	"bbs/pkg/common"
+	"bbs/services"
 )
 
 type EmailVerifyStrategy struct{}

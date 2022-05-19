@@ -1,7 +1,7 @@
 package uploader
 
 import (
-	"bbs-go/pkg/config"
+	"bbs/pkg/config"
 	"mime"
 	"time"
 

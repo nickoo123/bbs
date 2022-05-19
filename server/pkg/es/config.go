@@ -1,7 +1,7 @@
 package es
 
 import (
-	"bbs-go/pkg/config"
+	"bbs/pkg/config"
 	"errors"
 	"sync"
 

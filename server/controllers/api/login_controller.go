@@ -1,14 +1,14 @@
 package api
 
 import (
-	"bbs-go/controllers/render"
+	"bbs/controllers/render"
 
 	"github.com/dchest/captcha"
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/web"
 
-	"bbs-go/pkg/common"
-	"bbs-go/services"
+	"bbs/pkg/common"
+	"bbs/services"
 )
 
 type LoginController struct {

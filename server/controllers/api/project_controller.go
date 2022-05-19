@@ -5,8 +5,8 @@ import (
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"bbs-go/controllers/render"
-	"bbs-go/services"
+	"bbs/controllers/render"
+	"bbs/services"
 )
 
 type ProjectController struct {

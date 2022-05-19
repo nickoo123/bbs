@@ -1,12 +1,12 @@
 package es
 
 import (
-	"bbs-go/cache"
-	"bbs-go/model"
-	"bbs-go/model/constants"
-	html2 "bbs-go/pkg/html"
-	"bbs-go/pkg/markdown"
-	"bbs-go/repositories"
+	"bbs/cache"
+	"bbs/model"
+	"bbs/model/constants"
+	html2 "bbs/pkg/html"
+	"bbs/pkg/markdown"
+	"bbs/repositories"
 	"context"
 	"html"
 	"strconv"

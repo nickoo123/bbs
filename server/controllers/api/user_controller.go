@@ -1,10 +1,10 @@
 package api
 
 import (
-	"bbs-go/model/constants"
-	"bbs-go/pkg/common"
-	"bbs-go/pkg/msg"
-	"bbs-go/pkg/validate"
+	"bbs/model/constants"
+	"bbs/pkg/common"
+	"bbs/pkg/msg"
+	"bbs/pkg/validate"
 	"strconv"
 	"strings"
 
@@ -14,10 +14,10 @@ import (
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"bbs-go/cache"
-	"bbs-go/controllers/render"
-	"bbs-go/model"
-	"bbs-go/services"
+	"bbs/cache"
+	"bbs/controllers/render"
+	"bbs/model"
+	"bbs/services"
 )
 
 type UserController struct {

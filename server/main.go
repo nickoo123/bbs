@@ -1,12 +1,12 @@
 package main
 
 import (
-	"bbs-go/controllers"
-	"bbs-go/model"
-	"bbs-go/pkg/common"
-	"bbs-go/pkg/config"
-	"bbs-go/scheduler"
-	_ "bbs-go/services/eventhandler"
+	"bbs/controllers"
+	"bbs/model"
+	"bbs/pkg/common"
+	"bbs/pkg/config"
+	"bbs/scheduler"
+	_ "bbs/services/eventhandler"
 	"flag"
 	"io"
 	"log"
@@ -19,7 +19,7 @@ import (
 	"gorm.io/gorm/logger"
 )
 
-var configFile = flag.String("config", "./bbs-go.yaml", "配置文件路径")
+var configFile = flag.String("config", "./bbs.yaml", "配置文件路径")
 
 func init() {
 	flag.Parse()

@@ -1,9 +1,9 @@
 package services
 
 import (
-	"bbs-go/model/constants"
-	"bbs-go/pkg/bbsurls"
-	"bbs-go/pkg/config"
+	"bbs/model/constants"
+	"bbs/pkg/bbsurls"
+	"bbs/pkg/config"
 	"math"
 	"path"
 	"time"
@@ -15,10 +15,10 @@ import (
 	"github.com/mlogclub/simple/web/params"
 	"github.com/sirupsen/logrus"
 
-	"bbs-go/cache"
-	"bbs-go/model"
-	"bbs-go/pkg/common"
-	"bbs-go/repositories"
+	"bbs/cache"
+	"bbs/model"
+	"bbs/pkg/common"
+	"bbs/repositories"
 )
 
 var ProjectService = newProjectService()

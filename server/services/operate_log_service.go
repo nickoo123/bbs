@@ -1,9 +1,9 @@
 package services
 
 import (
-	"bbs-go/model"
-	"bbs-go/pkg/common"
-	"bbs-go/repositories"
+	"bbs/model"
+	"bbs/pkg/common"
+	"bbs/repositories"
 	"net/http"
 
 	"github.com/mlogclub/simple/common/dates"

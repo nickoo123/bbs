@@ -8,7 +8,7 @@ max_wait=30
 i=0
 until [ $i -ge $max_wait ]
 do
-  nc -z bbs-go-mysql 3306 && break
+  nc -z bbs-mysql 3306 && break
 
   i=$(( i + 1 ))
 
@@ -24,4 +24,4 @@ fi
 
 echo "Database is up, server starting..."
 
-./bbs-go-server
+./bbs-server

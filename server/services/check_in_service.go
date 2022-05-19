@@ -1,10 +1,10 @@
 package services
 
 import (
-	"bbs-go/cache"
-	"bbs-go/model"
-	"bbs-go/model/constants"
-	"bbs-go/repositories"
+	"bbs/cache"
+	"bbs/model"
+	"bbs/model/constants"
+	"bbs/repositories"
 	"errors"
 	"strconv"
 	"sync"

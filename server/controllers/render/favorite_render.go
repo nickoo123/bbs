@@ -1,12 +1,12 @@
 package render
 
 import (
-	"bbs-go/model"
-	"bbs-go/model/constants"
-	"bbs-go/pkg/bbsurls"
-	"bbs-go/pkg/common"
-	"bbs-go/pkg/text"
-	"bbs-go/services"
+	"bbs/model"
+	"bbs/model/constants"
+	"bbs/pkg/bbsurls"
+	"bbs/pkg/common"
+	"bbs/pkg/text"
+	"bbs/services"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"

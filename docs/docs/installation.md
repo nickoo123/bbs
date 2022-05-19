@@ -263,7 +263,7 @@ Now listening on: http://localhost:8082
 Application started. Press CMD+C to shut down.
 ```
 
-bbs-go-server默认的端口是：8082（你也可以在bbs-go.yaml配置文件中自行修改），在浏览器中访问：`http://localhost:8082` 就可以看到效果了，浏览器会显示：Powered by bbs-go 。
+bbs-go-server默认的端口是：8082（你也可以在bbs-go.yaml配置文件中自行修改），在浏览器中访问：`http://localhost:8082` 就可以看到效果了，浏览器会显示：Powered by • ©2021-2022 。
 
 ## site 端
 

@@ -1,10 +1,10 @@
 package eventhandler
 
 import (
-	"bbs-go/model"
-	"bbs-go/model/constants"
-	"bbs-go/pkg/event"
-	"bbs-go/services"
+	"bbs/model"
+	"bbs/model/constants"
+	"bbs/pkg/event"
+	"bbs/services"
 	"reflect"
 )
 

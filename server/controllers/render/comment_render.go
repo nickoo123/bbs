@@ -1,10 +1,10 @@
 package render
 
 import (
-	"bbs-go/model"
-	"bbs-go/model/constants"
-	"bbs-go/pkg/markdown"
-	"bbs-go/services"
+	"bbs/model"
+	"bbs/model/constants"
+	"bbs/pkg/markdown"
+	"bbs/services"
 	"html"
 	"strconv"
 

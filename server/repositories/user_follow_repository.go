@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"bbs-go/model"
+	"bbs/model"
 
 	"github.com/mlogclub/simple/sqls"
 	"github.com/mlogclub/simple/web/params"

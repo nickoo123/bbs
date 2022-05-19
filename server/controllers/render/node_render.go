@@ -1,6 +1,6 @@
 package render
 
-import "bbs-go/model"
+import "bbs/model"
 
 func BuildNode(node *model.TopicNode) *model.NodeResponse {
 	if node == nil {

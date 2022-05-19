@@ -1,16 +1,16 @@
 package eventhandler
 
 import (
-	"bbs-go/model"
-	"bbs-go/model/constants"
-	"bbs-go/pkg/common"
-	"bbs-go/pkg/event"
-	"bbs-go/pkg/msg"
+	"bbs/model"
+	"bbs/model/constants"
+	"bbs/pkg/common"
+	"bbs/pkg/event"
+	"bbs/pkg/msg"
 	"reflect"
 )
 
 import (
-	"bbs-go/services"
+	"bbs/services"
 )
 
 func init() {

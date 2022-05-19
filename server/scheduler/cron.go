@@ -1,12 +1,12 @@
 package scheduler
 
 import (
-	"bbs-go/pkg/sitemap"
+	"bbs/pkg/sitemap"
 
 	"github.com/robfig/cron"
 	"github.com/sirupsen/logrus"
 
-	"bbs-go/services"
+	"bbs/services"
 )
 
 func Start() {

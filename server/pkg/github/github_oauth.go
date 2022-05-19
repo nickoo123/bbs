@@ -13,8 +13,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/oauth2"
 
-	"bbs-go/pkg/common"
-	"bbs-go/pkg/config"
+	"bbs/pkg/common"
+	"bbs/pkg/config"
 )
 
 var ctxCache = cache.New(cache.WithMaximumSize(1000), cache.WithExpireAfterAccess(10*time.Minute))

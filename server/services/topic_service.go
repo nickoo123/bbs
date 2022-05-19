@@ -1,11 +1,11 @@
 package services
 
 import (
-	"bbs-go/model/constants"
-	"bbs-go/pkg/bbsurls"
-	"bbs-go/pkg/config"
-	"bbs-go/pkg/es"
-	"bbs-go/pkg/event"
+	"bbs/model/constants"
+	"bbs/pkg/bbsurls"
+	"bbs/pkg/config"
+	"bbs/pkg/es"
+	"bbs/pkg/event"
 	"errors"
 	"math"
 	"net/http"
@@ -24,10 +24,10 @@ import (
 	"github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 
-	"bbs-go/cache"
-	"bbs-go/model"
-	"bbs-go/pkg/common"
-	"bbs-go/repositories"
+	"bbs/cache"
+	"bbs/model"
+	"bbs/pkg/common"
+	"bbs/repositories"
 )
 
 var TopicService = newTopicService()

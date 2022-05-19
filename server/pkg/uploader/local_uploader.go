@@ -1,12 +1,12 @@
 package uploader
 
 import (
-	"bbs-go/pkg/bbsurls"
+	"bbs/pkg/bbsurls"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 
-	"bbs-go/pkg/config"
+	"bbs/pkg/config"
 )
 
 // 本地文件系统

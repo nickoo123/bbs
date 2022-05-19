@@ -1,9 +1,9 @@
 package services
 
 import (
-	"bbs-go/model"
-	"bbs-go/model/constants"
-	"bbs-go/repositories"
+	"bbs/model"
+	"bbs/model/constants"
+	"bbs/repositories"
 
 	"github.com/mlogclub/simple/sqls"
 	"github.com/mlogclub/simple/web/params"

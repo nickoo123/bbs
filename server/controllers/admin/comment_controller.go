@@ -1,17 +1,17 @@
 package admin
 
 import (
-	"bbs-go/pkg/markdown"
+	"bbs/pkg/markdown"
 	"strconv"
 
-	"bbs-go/controllers/render"
+	"bbs/controllers/render"
 
 	"github.com/kataras/iris/v12"
 	"github.com/mlogclub/simple/common/strs"
 	"github.com/mlogclub/simple/web"
 	"github.com/mlogclub/simple/web/params"
 
-	"bbs-go/services"
+	"bbs/services"
 )
 
 type CommentController struct {

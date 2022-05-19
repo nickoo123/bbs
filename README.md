@@ -6,22 +6,6 @@
 - Github: [https://github.com/mlogclub/bbs-go](https://github.com/mlogclub/bbs-go)
 - Gitee: [https://gitee.com/mlogclub/bbs-go](https://gitee.com/mlogclub/bbs-go)
 
-## 付费服务
-
-付费是为了项目能够更好的生存下去，请谅解。项目将一如既往的开源下去~
-
-- 联系QQ：`471243194`
-- 微信：
-- ![](https://s2.loli.net/2022/03/01/ojufvSrGF8PQq14.jpg)
-
-
-| 服务     | 价格  | 服务内容                                         |
-| -------- | ----- | ------------------------------------------------ |
-| 付费部署 | ￥128 | 协助将bbs-go部署成功                             |
-| 商用授权 | ￥628 | 提供bbs-go商业使用授权                             |
-| 付费咨询 | 面议  | 付费答疑解惑，协助解决问题                       |
-| 功能定制 | 面议  | 接受各种功能定制，只有你想不到的没有我们做不到的 |
-
 ## 介绍
 
 `bbs-go`是一个使用Go语言搭建的开源社区系统，采用前后端分离技术，Go语言提供api进行数据支撑，用户界面使用Nuxt.js进行渲染，后台界面基于element-ui。如果你正在学习Go语言，或者考虑转Go语言的Phper/Javaer...那么该项目对你有的学习会有很大的帮助，欢迎一起来交流。
@@ -70,7 +54,3 @@
 ![手机版.png](https://s2.loli.net/2022/04/12/mowWb78CGIaH6T2.png)
 ![后台首页.png](https://s2.loli.net/2022/04/12/ErX2BLTnh7ldz8D.png)
 ![后台配置.png](https://s2.loli.net/2022/04/12/PwK6aC74XEZlIOL.png)
-
-## Contributors
-
-<a href="https://github.com/mlogclub/bbs-go/graphs/contributors"><img src="https://opencollective.com/bbs-go/contributors.svg?width=890&button=false" /></a>

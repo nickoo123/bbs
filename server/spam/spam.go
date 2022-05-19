@@ -1,7 +1,7 @@
 package spam
 
 import (
-	"bbs-go/model"
+	"bbs/model"
 	"github.com/sirupsen/logrus"
 )
 

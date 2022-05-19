@@ -1,8 +1,8 @@
 package spam
 
 import (
-	"bbs-go/model"
-	"bbs-go/repositories"
+	"bbs/model"
+	"bbs/repositories"
 	"errors"
 	"time"
 
