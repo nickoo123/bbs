@@ -1,5 +1,5 @@
 module.exports = {
-  title: "BBS-GO管理系统",
+  title: "八斗米管理系统",
 
   /**
    * 页面切换的时候是否显示loading

@@ -7,11 +7,6 @@
             v-if="index === 2 || index === 6 || index === 12 || index === 18"
           >
             <!-- 信息流广告 -->
-            <adsbygoogle
-              ad-slot="4980294904"
-              ad-format="fluid"
-              ad-layout-key="-ht-19-1m-3j+mu"
-            />
           </div>
           <div class="project-header">
             <h1 itemprop="headline">

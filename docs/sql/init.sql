@@ -46,15 +46,15 @@ INSERT INTO t_user (
   )
 SELECT 1,
   'admin',
-  'bbsgo站长',
+  '八斗米',
   '',
-  'a@example.com',
+  '1410432625@qq.com',
   '$2a$10$ofA39bAFMpYpIX/Xiz7jtOMH9JnPvYfPRlzHXqAtLPFpbE/cLdjmS',
   0,
   (UNIX_TIMESTAMP(now()) * 1000),
   (UNIX_TIMESTAMP(now()) * 1000),
   'owner',
-  '轻轻地我走了，正如我轻轻的来。',
+  '享受生活。',
   0,
   0,
   0
