@@ -1,7 +1,7 @@
 {
-  "name": "bbs-go-site",
+  "name": "bbs-front",
   "version": "1.0.0",
-  "description": "bbs-go-site",
+  "description": "bbs-front",
   "author": "https://mlog.club",
   "private": true,
   "scripts": {

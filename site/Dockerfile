@@ -1,12 +1,24 @@
-FROM node:apline AS builder
+FROM node:lts-alpine3.12 AS builder
 
 MAINTAINER william
 
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
-RUN apk --no-cache add build-base tzdata git
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
+    apk --no-cache add build-base tzdata git
 
 COPY . /app
 WORKDIR /app
 
 RUN npm config set registry https://registry.npm.taobao.org && \
-    yarn install
+    yarn install && yarn build && npm intall -g pm2 && pm2 save && pm2 update
+
+FROM nginx:stable-alpine
+
+COPY --from=builder /app/dist /user/share/nginx/html
+COPY --from=builder /app/start.sh /user/share/nginx/html
+COPY --from=builder /app/.nuxt /user/share/nginx/html
+COPY --from=builder /app/static /user/share/nginx/html
+COPY --from=builder /app/nuxt.config.js /user/share/nginx/html
+COPY --from=builder /app/package.json /user/share/nginx/html
+
+EXPOSE 80
+CMD [ "pm2-runtime", "start", "npm", "--", "start" ]

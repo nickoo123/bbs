@@ -49,7 +49,7 @@ export default {
     '~/plugins/element-ui',
     '~/plugins/filters',
     '~/plugins/axios',
-    '~/plugins/bbs-go',
+    '~/plugins/bbs',
     { src: '~/plugins/vue-lazyload', ssr: false },
     { src: '~/plugins/viewer.js', ssr: false },
   ],
