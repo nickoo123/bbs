@@ -19,6 +19,7 @@ FROM alpine
 RUN mkdir -p /data && mkdir -p /data/www && mkdir -p /data/logs && mkdir -p /data/www
 WORKDIR /app
 COPY --from=builder /app/bbs /app
+COPY --from=builder /app/bbs.yaml /app
 COPY --from=builder /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 EXPOSE 8082
