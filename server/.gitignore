@@ -14,8 +14,6 @@
 
 bbs
 
-bbs.yaml
-bbs.prod.yaml
 vendor/*
 .idea/*
 build/*
@@ -28,4 +26,3 @@ logs/*.log
 generator.go
 go.work
 go.work.sum
-/server/vendor
