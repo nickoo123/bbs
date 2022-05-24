@@ -2,26 +2,6 @@
 
 set -eu
 
-echo "Checking database connection..."
+docker build -t bbs .
 
-max_wait=30
-i=0
-until [ $i -ge $max_wait ]
-do
-  nc -z bbs-mysql 3306 && break
-
-  i=$(( i + 1 ))
-
-  echo "$i: Waiting for database..."
-  sleep 1
-done
-
-if [ $i -eq $max_wait ]
-then
-  echo "Database connection refused, terminating..."
-  exit 1
-fi
-
-echo "Database is up, server starting..."
-
-./bbs-server
+docker run -itd --name bbsgo -p 8082:8082 --restart=always -v /data/bbs:/data bbs:latest
