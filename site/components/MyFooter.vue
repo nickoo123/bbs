@@ -8,9 +8,8 @@
       </div>
       <div>
         © 2021-2022 Powered by
-        <a href="https://docs.bbs-go.com" target="_blank" class="light"
-          >txyl66.cn</a
-        >
+        <a href="http://www.txyl66.cn" target="_blank" class="light">txyl66.cn</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2021098749号-1</a>
       </div>
     </div>
   </footer>
