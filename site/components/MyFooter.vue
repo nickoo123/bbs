@@ -9,8 +9,8 @@
         <nuxt-link to="/links">友链</nuxt-link>
       </div>
       <div>
-        © 2021-2022 Powered by
-        <a href="http://www.txyl66.cn" target="_blank" class="light">txyl66.cn</a>
+        Powered by
+        <a href="http://www.txyl66.cn" target="_blank" class="light">八斗米</a> © 2021-2022
         <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2021098749号-1</a>
       </div>
     </div>
