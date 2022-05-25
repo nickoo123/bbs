@@ -87,7 +87,7 @@ export default {
   },
 
   proxy: {
-    '/api/': 'http://192.168.1.3:8082',
+    '/api/': 'http://apis.txyl66.cn',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa

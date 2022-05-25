@@ -3,7 +3,9 @@
     <div class="container content">
       <div>
         <nuxt-link to="/about">关于</nuxt-link>
+        <a href="http://studio.txyl66.cn" target="_blank">工作室</a>
         <nuxt-link to="/tags">标签</nuxt-link>
+        <a href="http://www.biqugesk.cc" target="_blank">文学</a>
         <nuxt-link to="/links">友链</nuxt-link>
       </div>
       <div>
