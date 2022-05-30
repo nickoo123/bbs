@@ -14,3 +14,5 @@ RUN npm config set registry https://registry.npm.taobao.org -g && apk add python
 FROM nginx:stable-alpine
 COPY --from=builder /app/dist /usr/share/nginx/html
 WORKDIR /usr/share/nginx/html
+
+EXPOSE 80
