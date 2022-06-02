@@ -1,6 +1,5 @@
 #!/bin/bash
 
-set -eu
 docker stop bbssites && docker rm bbssites
 docker system prune -a
 docker build -t bbssite .
