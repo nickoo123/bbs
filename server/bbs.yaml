@@ -1,5 +1,5 @@
 Env: prod # 环境，线上环境：prod、测试环境：dev
-BaseUrl: https://txly66.cn # 网站域名
+BaseUrl: http://192.168.1.3:8082 # 网站域名
 Port: 8082 # 端口
 LogFile: /data/logs/bbs.log # 日志文件
 ShowSql: false # 是否打印sql
@@ -44,7 +44,7 @@ Uploader:
     StyleDetail: 详情图片样式名称
   # 本地文件上传
   Local:
-    Host: https://www.txyl66.cn/ # 上传文件域名
+    Host: http://192.168.1.3:8082/ # 上传文件域名
     Path: /data/www/ # 上传目录
 
 # 邮件服务器配置，用于邮件通知
