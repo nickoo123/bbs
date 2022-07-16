@@ -1,8 +1,7 @@
 {
-  "name": "bbs-front",
+  "name": "eight_rice",
   "version": "1.0.0",
-  "description": "bbs-front",
-  "author": "https://mlog.club",
+  "author": "https://www.txyl66.cn",
   "private": true,
   "scripts": {
     "dev": "nuxt",

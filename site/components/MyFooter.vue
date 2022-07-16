@@ -5,12 +5,11 @@
         <nuxt-link to="/about">关于</nuxt-link>
         <a href="https://studio.txyl66.cn" title="工作室" target="_blank">工作室</a>
         <nuxt-link to="/tags">标签</nuxt-link>
-        <a href="https://www.biqugesk.cc" title="文学" target="_blank">文学</a>
         <nuxt-link to="/links">友链</nuxt-link>
       </div>
       <div>
         Powered by
-        <a href="https://www.txyl66.cn" target="_blank" class="light">八斗米</a> © 2021-2022
+        <a href="https://www.txyl66.cn" target="_blank" class="light">八斗米</a>© 2021-{{ copyright }}
         <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2021098749号-1</a>
       </div>
     </div>
@@ -18,7 +17,17 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      copyright: '2022',
+    }
+  },
+  created() {
+    const date = new Date()
+    this.copyright = date.getFullYear()
+  },
+}
 </script>
 
 <style lang="scss" scoped>

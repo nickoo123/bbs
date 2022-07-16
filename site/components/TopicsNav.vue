@@ -25,8 +25,8 @@
         :key="node.nodeId"
         :class="{ active: currentNodeId === node.nodeId }"
       >
-        <nuxt-link :to="'/topics/node/' + node.nodeId">
-          <img v-if="node.logo" class="node-logo" :src="node.logo" />
+        <nuxt-link :to="'/topics/node/' + node.nodeId" :title="node.name">
+          <img v-if="node.logo" class="node-logo" :src="node.logo" :alt="node.name" />
           <img v-else class="node-logo" src="~/assets/images/node.png" />
           <span class="node-name">{{ node.name }}</span>
         </nuxt-link>

@@ -17,6 +17,7 @@
                   由
                   <nuxt-link
                     :to="'/user/' + article.user.id"
+                    :title="article.user.nickname"
                     class="article-author"
                     itemprop="author"
                     itemscope
@@ -43,7 +44,7 @@
                     :key="tag.tagId"
                     class="article-tag tag"
                   >
-                    <nuxt-link :to="'/articles/' + tag.tagId" class>{{
+                    <nuxt-link :to="'/articles/' + tag.tagId" :title="tag.tagName" class>{{
                       tag.tagName
                     }}</nuxt-link>
                   </span>

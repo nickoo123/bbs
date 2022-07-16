@@ -1,40 +1,40 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
-    htmlAttrs: {
-      lang: 'zh-cmn-Hans',
-      xmlns: 'http://www.w3.org/1999/xhtml',
-    },
-    meta: [
-      {
-        charset: 'utf-8',
-      },
-      {
-        name: 'viewport',
-        content:
-          'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui',
-      },
-      {
-        name: 'window-target',
-        content: '_top',
-      },
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'alternate',
-        type: 'application/atom+xml',
-        title: '文章',
-        href: '/atom.xml',
-      },
-      {
-        rel: 'alternate',
-        type: 'application/atom+xml',
-        title: '话题',
-        href: '/topic_atom.xml',
-      },
-    ],
-  },
+  // head: {
+  //   htmlAttrs: {
+  //     lang: 'zh-cmn-Hans',
+  //     xmlns: 'http://www.w3.org/1999/xhtml',
+  //   },
+  //   meta: [
+  //     {
+  //       charset: 'utf-8',
+  //     },
+  //     {
+  //       name: 'viewport',
+  //       content:
+  //         'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui',
+  //     },
+  //     {
+  //       name: 'window-target',
+  //       content: '_top',
+  //     },
+  //   ],
+  //   link: [
+  //     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+  //     {
+  //       rel: 'alternate',
+  //       type: 'application/atom+xml',
+  //       title: '文章',
+  //       href: '/atom.xml',
+  //     },
+  //     {
+  //       rel: 'alternate',
+  //       type: 'application/atom+xml',
+  //       title: '话题',
+  //       href: '/topic_atom.xml',
+  //     },
+  //   ],
+  // },
 
   /*
    ** Customize the progress-bar color
@@ -93,7 +93,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en',
+      lang: 'zh-CN',
     },
   },
 

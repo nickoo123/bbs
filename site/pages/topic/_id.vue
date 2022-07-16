@@ -99,6 +99,7 @@
                   v-if="topic.node"
                   :to="'/topics/node/' + topic.node.nodeId"
                   class="topic-tag"
+                  :title="topic.node.name"
                   >{{ topic.node.name }}</nuxt-link
                 >
                 <nuxt-link
@@ -106,6 +107,7 @@
                   :key="tag.tagId"
                   :to="'/topics/tag/' + tag.tagId"
                   class="topic-tag"
+                  :title="tag.tagName"
                   >#{{ tag.tagName }}</nuxt-link
                 >
               </div>
