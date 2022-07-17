@@ -9,16 +9,23 @@ COPY . /app
 WORKDIR /app
 
 RUN npm config set registry http://registry.npmmirror.com
-RUN rm -rf node_modules/ package-lock.json && yarn install && yarn build
-RUN npm i -g pm2 && pm2 save
-
-FROM nginx:stable-alpine
-COPY --from=builder /app/dist /user/share/nginx/html
-COPY --from=builder /app/start.sh /user/share/nginx/html
-COPY --from=builder /app/.nuxt /user/share/nginx/html
-COPY --from=builder /app/static /user/share/nginx/html
-COPY --from=builder /app/nuxt.config.js /user/share/nginx/html
-COPY --from=builder /app/package.json /user/share/nginx/html
+RUN rm -rf package-lock.json && yarn install && \
+    yarn build  && npm i -g pm2 && pm2 save
+#RUN yarn add nuxt -g
 
 EXPOSE 3000
-CMD [ "pm2-runtime", "start", "npm", "--", "start" ]
+
+#CMD ["npm", "start"]
+
+#FROM nginx:stable-alpine
+#
+#RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
+#    apk update && apk add nodejs && apk add npm && npm i -g pm2 && pm2 save
+#COPY --from=builder /app/node_modules /user/share/nginx/html
+#COPY --from=builder /app/.nuxt /user/share/nginx/html
+#COPY --from=builder /app/static /user/share/nginx/html
+#COPY --from=builder /app/nuxt.config.js /user/share/nginx/html
+#COPY --from=builder /app/package.json /user/share/nginx/html
+#
+#WORKDIR /user/share/nginx/html
+

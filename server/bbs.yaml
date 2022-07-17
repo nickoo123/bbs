@@ -44,7 +44,7 @@ Uploader:
     StyleDetail: 详情图片样式名称
   # 本地文件上传
   Local:
-    Host: https://api.txyl66.cn/ # 上传文件域名
+    Host: https://www.txyl66.cn/ # 上传文件域名
     Path: /data/www/ # 上传目录
 
 # 邮件服务器配置，用于邮件通知

@@ -16,7 +16,7 @@ RUN pwd && ls
 
 FROM alpine
 
-RUN mkdir -p /data && mkdir -p /data/www && mkdir -p /data/logs && mkdir -p /data/www
+RUN mkdir -p /data && mkdir -p /data/www && mkdir -p /data/logs
 WORKDIR /app
 COPY --from=builder /app/bbs /app
 COPY --from=builder /app/bbs.yaml /app
