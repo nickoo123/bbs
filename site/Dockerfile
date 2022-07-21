@@ -10,12 +10,13 @@ WORKDIR /app
 
 RUN npm config set registry http://registry.npmmirror.com
 RUN rm -rf package-lock.json && yarn install && \
+    chmod o+x /app/run.sh && \
     yarn build  && npm i -g pm2 && pm2 save
 #RUN yarn add nuxt -g
 
 EXPOSE 3000
 
-#CMD ["npm", "start"]
+ENTRYPOINT ["sh", "/app/run.sh"]
 
 #FROM nginx:stable-alpine
 #
