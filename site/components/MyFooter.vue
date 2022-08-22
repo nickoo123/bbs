@@ -3,7 +3,6 @@
     <div class="container content">
       <div>
         <nuxt-link to="/about">关于</nuxt-link>
-        <a href="https://studio.txyl66.cn" title="工作室" target="_blank">工作室</a>
         <nuxt-link to="/tags">标签</nuxt-link>
         <nuxt-link to="/links">友链</nuxt-link>
       </div>

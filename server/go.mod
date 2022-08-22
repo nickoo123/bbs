@@ -6,6 +6,7 @@ require (
 	github.com/88250/lute v1.7.3
 	github.com/PuerkitoBio/goquery v1.8.0
 	github.com/aliyun/aliyun-oss-go-sdk v2.2.2+incompatible
+	github.com/axgle/mahonia v0.0.0-20151019004008-c528b747d92d
 	github.com/dchest/captcha v0.0.0-20200903113550-03f5f0333e1f
 	github.com/emirpasic/gods v1.12.1
 	github.com/go-resty/resty/v2 v2.7.0
@@ -19,6 +20,7 @@ require (
 	github.com/mlogclub/simple v1.2.0
 	github.com/olivere/elastic/v7 v7.0.32
 	github.com/panjf2000/ants/v2 v2.4.8
+	github.com/pkg/errors v0.9.1
 	github.com/robfig/cron v1.2.0
 	github.com/sirupsen/logrus v1.8.1
 	github.com/tidwall/gjson v1.14.0
@@ -77,7 +79,6 @@ require (
 	github.com/nats-io/nats.go v1.14.0 // indirect
 	github.com/nats-io/nkeys v0.3.0 // indirect
 	github.com/nats-io/nuid v1.0.1 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rogpeppe/go-internal v1.6.1 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/satori/go.uuid v1.2.1-0.20181028125025-b2ce2384e17b // indirect

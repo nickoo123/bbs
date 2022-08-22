@@ -9,6 +9,7 @@ var Models = []interface{}{
 	&User{}, &UserToken{}, &Tag{}, &Article{}, &ArticleTag{}, &Comment{}, &Favorite{}, &Topic{}, &TopicNode{},
 	&TopicTag{}, &UserLike{}, &Message{}, &SysConfig{}, &Project{}, &Link{}, &ThirdAccount{},
 	&UserScoreLog{}, &OperateLog{}, &EmailCode{}, &CheckIn{}, &UserFollow{}, &UserFeed{},
+	&Crawler{}, &CrawlerContent{},
 }
 
 type Model struct {
@@ -77,7 +78,7 @@ type Article struct {
 	Summary     string `gorm:"type:text" json:"summary" form:"summary"`                           // 摘要
 	Content     string `gorm:"type:longtext;not null;" json:"content" form:"content"`             // 内容
 	ContentType string `gorm:"type:varchar(32);not null" json:"contentType" form:"contentType"`   // 内容类型：markdown、html
-	Status      int    `gorm:"type:int(11);index:idx_article_status" json:"status" form:"status"` // 状态
+	Status      int    `gorm:"type:int(2);index:idx_article_status" json:"status" form:"status"`  // 状态
 	Share       bool   `gorm:"not null" json:"share" form:"share"`                                // 是否是分享的文章，如果是这里只会显示文章摘要，原文需要跳往原链接查看
 	SourceUrl   string `gorm:"type:text" json:"sourceUrl" form:"sourceUrl"`                       // 原文链接
 	ViewCount   int64  `gorm:"not null;index:idx_view_count;" json:"viewCount" form:"viewCount"`  // 查看数量
@@ -295,4 +296,31 @@ type UserFeed struct {
 	DataType   string `gorm:"not null;uniqueIndex:idx_data;index:idx_data_id;index:idx_search" json:"dataType" form:"dataType"` // 数据类型
 	AuthorId   int64  `gorm:"not null;index:idx_user_id" json:"authorId" form:"authorId"`                                       // 作者编号
 	CreateTime int64  `gorm:"type:bigint;not null;index:idx_search" json:"createTime" form:"createTime"`                        // 数据的创建时间
+}
+
+// Crawler link
+type Crawler struct {
+	Model
+	Url                   string `gorm:"size:128;not null;" json:"url" form:"url"`                                    // 采集地址
+	CrawlerSelector       string `gorm:"size:50;not null;" json:"crawlerSelector" form:"crawlerSelector"`             // 采集选择器
+	CrawlerSubSelector    string `gorm:"size:50;null;" json:"crawlerSubSelector" form:"crawlerSubSelector"`           // 采集目录选择器
+	CrawlerSubAttr        string `gorm:"size:10;not null;" json:"crawlerSubAttr" form:"crawlerSubAttr"`               // 采集目录元素属性
+	CrawlerSubExcludeAttr string `gorm:"size:50;not null;" json:"crawlerSubExcludeAttr" form:"crawlerSubExcludeAttr"` // 采集link排除属性
+	CrawlerLinkSelector   string `gorm:"size:50;not null;" json:"crawlerLinkSelector" form:"crawlerLinkSelector"`     // 采集link选择器
+	Status                int    `gorm:"type:int(2);index:idx_article_status" json:"status" form:"status"`            // 状态
+	Charset               string `gorm:"type:varchar(10);not null" json:"charset" form:"charset"`                     // 编码
+	CreateTime            int64  `gorm:"index:idx_crawler_create_time" json:"createTime" form:"createTime"`           // 创建时间
+	UpdateTime            int64  `json:"updateTime" form:"updateTime"`                                                // 更新时间
+}
+
+// Crawler data
+type CrawlerContent struct {
+	Model
+	CrawlerId  int64  `gorm:"not null;index:idx_data_id" json:"crawlerId" form:"crawlerId"`      // 采集Id
+	Title      string `gorm:"size:50;not null;" json:"title" form:"title"`                       // 标题
+	Link       string `gorm:"size:100;not null;" json:"link" form:"link"`                        // 采集地址
+	Status     int    `gorm:"type:int(2);index:idx_article_status" json:"status" form:"status"`  // 状态
+	CrawlerNum int8   `gorm:"type:int(4);" json:"crawlerNum" form:"crawlerNum"`                  // 采集次数
+	CreateTime int64  `gorm:"index:idx_crawler_create_time" json:"createTime" form:"createTime"` // 创建时间
+	UpdateTime int64  `json:"updateTime" form:"updateTime"`                                      // 更新时间
 }

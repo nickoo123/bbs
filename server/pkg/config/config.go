@@ -98,6 +98,12 @@ type Config struct {
 		Url   string `yaml:"Url"`
 		Index string `yaml:"Index"`
 	} `yaml:"Es"`
+
+	// Crawler data
+	CrawlerUser struct {
+		UserSize int64 `yaml:"UserSize"`
+		UserId   []int `yaml:"UserId"`
+	} `yaml:"CrawlerUser"`
 }
 
 func Init(filename string) *Config {

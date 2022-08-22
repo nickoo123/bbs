@@ -7,7 +7,7 @@ StaticPath: /data/www  # 根路径下的静态文件目录，可配置绝对路�
 
 # 数据库连接
 DB:
-  Url: root:sn123456@tcp(192.168.1.3:3307)/bbsgo?charset=utf8mb4&parseTime=True&loc=Local
+  Url: root:sn123456@tcp(localhost:3306)/gotest?charset=utf8mb4&parseTime=True&loc=Local
   MaxIdleConns: 50
   MaxOpenConns: 200
 
@@ -29,7 +29,7 @@ QQConnect:
 # 上传配置
 Uploader:
   # 启用上传方式
-  Enable: Oss
+  Enable:
   # 阿里云oss配置
   AliyunOss:
     Host: 请配置成你自己的
@@ -77,3 +77,8 @@ SmSEO:
 Es:
   Url: http://127.0.0.1:9200
   Index: bbs_topic_1
+
+# crawler data set random user id
+CrawlerUser:
+  UserSize: 2
+  UserId: [1, 2]
