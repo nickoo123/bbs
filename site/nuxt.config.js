@@ -113,5 +113,6 @@ export default {
         return [['@nuxt/babel-preset-app', options]]
       },
     },
+    extractCSS: { allTrunks: true },
   },
 }
